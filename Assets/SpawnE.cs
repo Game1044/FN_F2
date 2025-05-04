@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.SceneManagement;
+
 public class SpawnE : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,7 +20,7 @@ public class SpawnE : MonoBehaviour
     {
         if (enemyCount == 0)
         {
-            EditorApplication.isPlaying = false;
+            SceneManager.LoadSceneAsync(2);
         }
     }
 

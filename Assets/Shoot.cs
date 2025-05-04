@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Shoot : MonoBehaviour
 {
@@ -33,8 +34,8 @@ public class Shoot : MonoBehaviour
             firedBullet.linearVelocity = projectileVelocity;
             // ลดกระสุน 
             bulletLimit--;
-            
-                
+
+
         }//GetMouseButtonDown
 
 

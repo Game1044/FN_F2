@@ -3,6 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class DestroyEnemyfall : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class DestroyEnemyfall : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Base"))
         {
-            EditorApplication.isPlaying = false;
+            SceneManager.LoadSceneAsync(2);
         }
     }
 }
